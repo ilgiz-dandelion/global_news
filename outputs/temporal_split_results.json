@@ -1,0 +1,27 @@
+{
+  "split_type": "temporal",
+  "train_period": "October 2023",
+  "test_period": "November 2023",
+  "train_samples": 7242,
+  "test_samples": 2577,
+  "models": {
+    "tfidf_logreg": {
+      "accuracy": 0.710128055878929,
+      "f1_macro": 0.6900524688571125
+    },
+    "embeddings_logreg": {
+      "accuracy": 0.7186651144741948,
+      "f1_macro": 0.7187415394935014
+    },
+    "ensemble_concat": {
+      "accuracy": 0.7477687233216919,
+      "f1_macro": 0.744185246356928
+    },
+    "ensemble_voting": {
+      "accuracy": 0.7597982149786574,
+      "f1_macro": 0.7558782911592052
+    }
+  },
+  "best_model": "Ensemble (Soft Voting)",
+  "best_f1_macro": 0.7558782911592052
+}
